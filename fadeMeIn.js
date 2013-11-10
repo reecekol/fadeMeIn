@@ -7,5 +7,22 @@
 
 (function($){
 
+  var maxSpeed;
+  var minSpeed;
+  
+
+  
+  $.fn.fadeMeIn=function(option){
+  
+   if(typeof option= undefined)
+   {
+   
+    option={};
+   
+   }
+   
+  
+  
+  }
 
 })(jQuery);
