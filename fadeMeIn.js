@@ -14,13 +14,20 @@
   
   $.fn.fadeMeIn=function(option){
   
+   /*
    if(typeof option= undefined)
    {
    
     option={};
    
    }
+   */
    
+
+   return $(this).each(function() {
+
+
+  });
   
   
   }
