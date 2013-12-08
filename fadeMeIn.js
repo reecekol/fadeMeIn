@@ -13,19 +13,21 @@
 
   
   $.fn.fadeMeIn=function(option){
+   
+    var obj=this;  // the jquery objeact;
   
-   /*
-   if(typeof option= undefined)
+   if(typeof option === undefined)
    {
    
     option={};
    
    }
-   */
+  
    
 
-   return $(this).each(function() {
+   return obj.each(function() {
 
+     $(this).fadeIn();
 
   });
   
