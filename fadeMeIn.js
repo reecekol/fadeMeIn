@@ -7,9 +7,9 @@
 
 (function($){
 
-  var maxSpeed;
-  var minSpeed;
-  
+  var maxSpeed=2000;
+  var minSpeed=100;
+  var random=0;
 
   
   $.fn.fadeMeIn=function(option){
@@ -22,12 +22,18 @@
     option={};
    
    }
-  
    
-
+   if(option.speed==="random")
+   {
+	  option.speed= Math.floor(Math.random()*10000);
+   }   
+   
+   
+   
+    console.log(option.speed);
    return obj.each(function() {
 
-     $(this).fadeIn();
+     $(this).fadeIn(option.speed);
 
   });
   
