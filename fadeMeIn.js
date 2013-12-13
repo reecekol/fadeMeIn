@@ -23,6 +23,12 @@
    
    }
    
+   
+   option=option.minSpeed||minSpeed;
+   option=option.maxSpeed||maxSpeed;
+   
+   
+   
    if(option.speed==="random")
    {
 	  option.speed= Math.floor(Math.random()*10000);
@@ -31,6 +37,7 @@
    
    
     console.log(option.speed);
+	
    return obj.each(function() {
 
      $(this).fadeIn(option.speed);
